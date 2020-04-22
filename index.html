@@ -2,588 +2,689 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kromtech Mentorship program</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist\css\bootstrap.min.css"> 
-    <link rel="stylesheet" type="text/css" href="./Mentor_files/mentor-template.webflow.7283d9bbf.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="css(1).css"> 
-    <link rel="stylesheet" type="text/css" href="owl.carousel.min.css"> 
-  </style><link type="text/css" rel="stylesheet" href="./Identity - Responsive Multipurpose Template_files/css"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
-  </style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
-  </style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
-  </style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-  </style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
-  <link type="text/css" href="./Identity - Responsive Multipurpose Template_files/plugins.css" rel="stylesheet">
-  <link type="text/css" href="./Identity - Responsive Multipurpose Template_files/style.css" rel="stylesheet">
-  <link type="text/css" href="./Identity - Responsive Multipurpose Template_files/style-responsive.css" rel="stylesheet">
-  <link href="./Identity - Responsive Multipurpose Template_files/css(1)" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kromtech Mentorship program</title>
+  <link rel="stylesheet" type="text/css" href="./style/mentor-template.webflow.7283d9bbf.css">
+  <link rel="stylesheet" type="text/css" href="./style/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="./style/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./style/css.css">
+  <link rel="stylesheet" type="text/css" href="./style/css(1).css">
+  <link rel="stylesheet" type="text/css" href="./style/owl.carousel.min.css">
+  </style>
+  <style>
+    .gm-ui-hover-effect {
+      opacity: .6
+    }
 
-    <script>WebFont.load({
-            google: {
-                families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
-            }
-        });</script>
-    <script src="./Mentor_files/webfont.js.download"></script>
-    <script type="text/javascript" src="./Mentor_files/modernizr-2.7.1.js.download"></script>
-    <script type="text/javascript" src="./Mentor_files/jquery.min.js.download"></script>
-    <script type="text/javascript" src="./Mentor_files/webflow.d70772391.js.download"></script>
-    <script src="https://use.fontawesome.com/7672e5925f.js"></script>
+    .gm-ui-hover-effect:hover {
+      opacity: 1
+    }
+  </style>
+  <style>
+    .gm-style .gm-style-cc span,
+    .gm-style .gm-style-cc a,
+    .gm-style .gm-style-mtc div {
+      font-size: 10px;
+      box-sizing: border-box
+    }
+  </style>
+  <style>
+    @media print {
+
+      .gm-style .gmnoprint,
+      .gmnoprint {
+        display: none
+      }
+    }
+
+    @media screen {
+
+      .gm-style .gmnoscreen,
+      .gmnoscreen {
+        display: none
+      }
+    }
+  </style>
+  <style>
+    .dismissButton {
+      background-color: #fff;
+      border: 1px solid #dadce0;
+      color: #1a73e8;
+      border-radius: 4px;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      height: 36px;
+      cursor: pointer;
+      padding: 0 24px
+    }
+
+    .dismissButton:hover {
+      background-color: rgba(66, 133, 244, 0.04);
+      border: 1px solid #d2e3fc
+    }
+
+    .dismissButton:focus {
+      background-color: rgba(66, 133, 244, 0.12);
+      border: 1px solid #d2e3fc;
+      outline: 0
+    }
+
+    .dismissButton:hover:focus {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd
+    }
+
+    .dismissButton:active {
+      background-color: rgba(66, 133, 244, 0.16);
+      border: 1px solid #d2e2fd;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+    }
+
+    .dismissButton:disabled {
+      background-color: #fff;
+      border: 1px solid #f1f3f4;
+      color: #3c4043
+    }
+  </style>
+  <style>
+    .gm-style-pbc {
+      transition: opacity ease-in-out;
+      background-color: rgba(0, 0, 0, 0.45);
+      text-align: center
+    }
+
+    .gm-style-pbt {
+      font-size: 22px;
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+  </style>
+  <style>
+    .gm-style img {
+      max-width: none;
+    }
+
+    .gm-style {
+      font: 400 11px Roboto, Arial, sans-serif;
+      text-decoration: none;
+    }
+  </style>
+  <link type="text/css" href="./style/plugins.css" rel="stylesheet">
+  <link type="text/css" href="./style/style.css" rel="stylesheet">
+  <link type="text/css" href="./style/style-responsive.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+
+  <script>WebFont.load({
+      google: {
+        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });</script>
+  <script src="./js/webfont.js.download"></script>
+  <script type="text/javascript" src="./js/modernizr-2.7.1.js.download"></script>
+  <script type="text/javascript" src="./js/jquery.min.js.download"></script>
+  <script type="text/javascript" src="./js/webflow.d70772391.js.download"></script>
+  <script src="https://use.fontawesome.com/7672e5925f.js"></script>
 
 </head>
 
-<body>
-    <header>
-        <div class="w-section shadow background-light">
-            <div class="w-container">
+<body style="font-family: 'Merriweather', serif;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="font-size: 20px;">
+    <a class="navbar-brand" href="#">
+      <img src="./img/krom.svg" width="60" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">About</a>
+        <a class="nav-item nav-link" href="#">Check up</a>
+        <a class="nav-item nav-link" href="#">Blog</a>
+        <a class="nav-item nav-link" href="#">Other Services</a>
+      </div>
+    </div>
+  </nav>
 
-                <div class="navigation">
-                    <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1"
-                        class="w-nav nav">
-                        <div class="w-container main-nav"><a href="£/"
-                                class="w-nav-brand w--current"><img
-                                    src="home.png"></a>
-                            <nav role="navigation" class="w-nav-menu"><a href="index.html"
-                                    class="w-nav-link main-nav-link w--current" style="max-width: 940px;">Homepage</a><a
-                                    href="#" class="w-nav-link main-nav-link"
-                                    style="max-width: 940px;">About</a><a
-                                    href="check up.html"
-                                    class="w-nav-link main-nav-link" style="max-width: 940px;">Check up</a><a
-                                    href="#" class="w-nav-link main-nav-link"
-                                    style="max-width: 940px;">Blog</a><a
-                                    href="#" class="w-nav-link main-nav-link"
-                                    style="max-width: 940px;">Other Services</a></nav>
-                            <div class="w-nav-button">
-                                <div class="w-icon-nav-menu"></div>
-                            </div>
-                        </div>
-                        <div class="w-nav-overlay" data-wf-ignore=""></div>
-                    </div>
-                </div>
+  <div data-ix="new-interaction" class="w-section mb-5">
+    <div data-animation="slide" data-duration="500" data-infinite="1" class="w-slider hero-slider">
+      <div class="w-slider-mask">
+        <div class="w-slide slide-1" style="transform: translateX(0px); opacity: 1;">
+          <div class="slider-wrapper">
+            <div class="w-container m-3">
+
+              <div><i>Hi, Welcome to</i>
+                <h3>Kromtech Mentorship Program</h3>
+              </div>
+              <h1 class="slider-h1">Become a Mentor<br>Get Mentored</h1>
+
+              <a href="Sign form.html" class="btn btn-outline-info m-2">As a Mentor</a>
+              <a href="Sign form.html" class="btn btn-outline-info m-1 ">As a Mentee</a>
+
             </div>
+          </div>
         </div>
-    </header>
-    <!--End of NavBar =========================================================================================================================== -->
-    <div data-ix="new-interaction" class="w-section">
-        <div data-animation="slide" data-duration="500" data-infinite="1" class="w-slider hero-slider">
-          <div class="w-slider-mask">
-            <div class="w-slide slide-1" style="transform: translateX(0px); opacity: 1;">
-              <div class="slider-wrapper">
-                <div class="w-container">
-
-                  <div><i>Hi, Welcome to</i> <h3>Kromtech Mentorship Program</h3></div>
-                  <h1 class="slider-h1">Become a Mentor<br>Get Mentored</h1>
-
-                  
-
-
-                    <a href="Sign form.html" class="btn btn-info m-2">As a Mentor</a>
-
-
-                    <a href="Sign form.html" class="btn btn-info m-1 ">As a Mentee</a>
-
-
-                   
-
-
-
-                </div>
+        <div class="w-slide slide-2 " style="transform: translateX(0px); opacity: 1;">
+          <div class="slider-wrapper">
+            <div class="w-container m-3">
+              <div class="text-info">
+                <h3>Get Ready to be</h3>
               </div>
+              <h1 class="slider-h1 text-info">Shown the right path<br>By Experienced individuals</h1>
             </div>
-            <div class="w-slide slide-2" style="transform: translateX(0px); opacity: 1;">
-              <div class="slider-wrapper">
-                <div class="w-container">
-                  <div class="text-info"><h3>Get Ready to be</h3> </div>
-                  <h1 class="slider-h1 text-info">Shown the right path<br>By Experienced individuals</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-slider-arrow-left">
-            <div class="w-icon-slider-left"></div>
-          </div>
-          <div class="w-slider-arrow-right">
-            <div class="w-icon-slider-right"></div>
-          </div>
-          <div class="w-slider-nav w-round">
-            <div class="w-slider-dot w-active" data-wf-ignore=""></div>
-            <div class="w-slider-dot" data-wf-ignore=""></div>
           </div>
         </div>
       </div>
+      <div class="w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
+      </div>
+      <div class="w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
+      </div>
+      <div class="w-slider-nav w-round">
+        <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+        <div class="w-slider-dot" data-wf-ignore=""></div>
+      </div>
+    </div>
+  </div>
 
-                  <!--OUR GOALS ***********************************************************************************-->
-                  <section id="how-can-i-help-you" class="ts-block ts-xs-text-center text-center">
-                    <div class="container">
-                        <div class="ts-title pt-3">
-                            <h2>OUR GOALS</h2>
-                            <h3 class="ts-opacity__30">Below are what we plan to achieve</h3>
-                        </div>
-                        <!--end ts-title-->
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4 col-xl-4">
-                                <div class="ts-item" data-animate="ts-fadeInUp" style="visibility: visible;">
-                                    <div class="ts-item-content">
-                                        <div class="ts-item-header">
-                                            <figure class="icon">
-                                                <img src="icon-head-question.png" alt="">
-                                            </figure>
-                                            <!--end icon-->
-                                        </div>
-                                        <!--end ts-item-header-->
-                                        <div class="ts-item-body">
-                                            <h4>Better Decision making</h4>
-                                            <p class="mb-0">
-                                                We believe our program would help not only the mentee but also the mentors make better choices therefore happier lives
-                                            </p>
-                                        </div>
-                                        <!--end ts-item-body-->
-                                    </div>
-                                    <!--end ts-item-content-->
-                                </div>
-                                <!--end ts-item-->
-                            </div>
-                            <!--end col-xl-4-->
-                            <div class="col-sm-6 col-md-4 col-xl-4">
-                                <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.1s" style="animation-delay: 0.1s; visibility: visible;">
-                                    <div class="ts-item-content">
-                                        <div class="ts-item-header">
-                                            <figure class="icon">
-                                                <img src="icon-hands-heart.png" alt="">
-                                            </figure>
-                                            <!--end icon-->
-                                        </div>
-                                        <!--end ts-item-header-->
-                                        <div class="ts-item-body">
-                                            <h4>emotion stability</h4>
-                                            <p class="mb-0">
-                                                With the program in place, no matter the hundle/trial a student might pass physically/emotionally,
-                                             they would always have a experienced mentor to talk to.
-                                            </p>
-                                        </div>
-                                        <!--end ts-item-body-->
-                                    </div>
-                                    <!--end ts-item-content-->
-                                </div>
-                                <!--end ts-item-->
-                            </div>
-                            <!--end col-xl-4-->
-                            <div class="col-sm-6 offset-sm-4 col-md-4 offset-md-0 col-xl-4">
-                                <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.2s" style="animation-delay: 0.2s; visibility: visible;">
-                                    <div class="ts-item-content">
-                                        <div class="ts-item-header">
-                                            <figure class="icon">
-                                                <img src="icon-sitting.png" alt="">
-                                            </figure>
-                                            <!--end icon-->
-                                        </div>
-                                        <!--end ts-item-header-->
-                                        <div class=" ts-item-body">
-                                            <h4>mentee academic excellence</h4>
-                                            <p class="mb-0">
-                                                With the right choices and better stability the students would have more time for their academics and thereby
-                                                academic excellence is granted
-                                            </p>
-                                        </div>
-                                        <!--end ts-item-body-->
-                                    </div>
-                                    <!--end ts-item-content-->
-                                </div>
-                                <!--end ts-item-->
-                            </div>
-                            <!--end col-xl-4-->
-                        </div>
-                        <!--end row-->
-                    </div>
-                    <!--end container-->
-                </section>
-                <!--END OUR GOALS ******************************************************************************-->
-    
-
-                <div class="ts-title pt-3 text-center">
-                    <h1>BENEFITS</h1>
-                    <h3 class="ts-opacity__30">Below are the benefits of joining the program</h3>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card m-5 border-dark">
-                              <div class="card-body">
-                                <h4 class="card-header bg-info text-white">For Mentors</h4>
-                                
-                                <ul class="list-group list-group-flush">
-                                  <li class="list-group-item border-info">Develop leadership skills</li>
-                                  <li class="list-group-item border-dark">Communication and listening skills</li>
-                                  <li class="list-group-item border-warning">Knowledge</li>
-                                  <li class="list-group-item border-danger">Learning opportunity</li>
-                                  <li class="list-group-item border-primary">Giving back and Personal satisfaction</li>
-                                  <li class="list-group-item border-success">Certificate upon Completion</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="col-sm-6">
-                          <div class="card m-5 border-dark">
-                            <div class="card-body ">
-                              <h4 class="card-header bg-info text-white">For Mentee</h4>
-                              
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item border-info">Learn the workplace routine</li>
-                                <li class="list-group-item border-dark">Enhance skill development</li>
-                                <li class="list-group-item border-warning">Networking</li>
-                                <li class="list-group-item border-danger">Direction</li>
-                                <li class="list-group-item border-primary">Problem-solving</li>
-                                <li class="list-group-item border-success">Certificate upon Completion</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                      <div class="text-center" style="font-size: large;"><i><b><a href="#">Click the link for detailed explanation of the benefits</a></b></i></div>
-                </div>
-                <br/> <br/> <br/> <br/> <br/> <br/>
-
-                <!-- Timeline start ============================================================================== -->
-            <!--ONLINE WEBINARS **************************************************************************************-->
-            <section id="online-webinars" class="ts-block pt-5 pb-0">
-              <div class="container pt-3">
-                  <div class="ts-title text-center">
-                      <h2 class="text-secondary">-TIMELIME-</h2>
-                  </div>
-                  <!--end ts-title-->
-                  <div class="row ts-cards-same-height">
-                      <div class="col-sm-6 col-lg-3">
-                          <div class="card ">
-                              <div class="ts-card__image ts-img-into-bg" >
-                                  <img class="card-img-top" src="start.png" alt="Card image cap">
-                              </div>
-                             <!--end card-body-->
-                          </div>
-                          <!--end card-->
-                      </div>
-                      <!--end col-md-3-->
-                      <div class="col-sm-6 col-lg-3">
-                          <div class="card">
-                              <div class="ts-card__image ts-img-into-bg" >
-                                  <img class="card-img-top" src="pairing.png" alt="Card image cap">
-                              </div>
-                              </div>
-                              <!--end ts-card__image-->
-                          <!--end card-->
-                      </div>
-                      <!--end col-md-3-->
-                      <div class="col-sm-6 col-lg-3">
-                          <div class="card">
-                              <div class="ts-card__image ts-img-into-bg" >
-                                  <img class="card-img-top" src="check up.png" alt="Card image cap">
-                              </div>
-                              </div>
-                              <!--end ts-card__image-->
-                          <!--end card-->
-                      </div>
-                      <!--end col-md-3-->
-                      <div class="col-sm-6 col-lg-3">
-                          <div class="card ">
-                              <div class="ts-card__image ts-img-into-bg" >
-                                  <img class="card-img-top" src="ending.png" alt="Card image cap">
-                              </div>
-                              <!--end ts-card__image-->
-                             
-                          </div>
-                          <!--end card-->
-                      </div>
-                      <!--end col-md-3-->
-
-                  </div>
-                  <!--end row-->
+  <!--OUR GOALS ***********************************************************************************-->
+  <section id="how-can-i-help-you" class="ts-block ts-xs-text-center text-center">
+    <div class="container">
+      <div class="ts-title pt-3">
+        <h2><u>OUR GOALS </u></h2>
+        <h3 class="ts-opacity__30">Below are what we plan to achieve</h3>
+      </div>
+      <!--end ts-title-->
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-4">
+          <div class="ts-item" data-animate="ts-fadeInUp" style="visibility: visible;">
+            <div class="ts-item-content">
+              <div class="ts-item-header">
+                <figure class="icon">
+                  <img src="./img/icon-head-question.png" alt="">
+                </figure>
+                <!--end icon-->
               </div>
-              <!--end container-->
-          </section>
-                  <!-- Timeline end ============================================================================== -->
-                  <!-- sign up start ============================================================================== -->
+              <!--end ts-item-header-->
+              <div class="ts-item-body">
+                <h4>Better Decision making</h4>
+                <p class="mb-0">
+                  We believe our program would help not only the mentee but also the mentors make better choices
+                  therefore happier lives
+                </p>
+              </div>
+              <!--end ts-item-body-->
+            </div>
+            <!--end ts-item-content-->
+          </div>
+          <!--end ts-item-->
+        </div>
+        <!--end col-xl-4-->
+        <div class="col-sm-6 col-md-4 col-xl-4">
+          <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.1s"
+            style="animation-delay: 0.1s; visibility: visible;">
+            <div class="ts-item-content">
+              <div class="ts-item-header">
+                <figure class="icon">
+                  <img src="./img/icon-hands-heart.png" alt="">
+                </figure>
+                <!--end icon-->
+              </div>
+              <!--end ts-item-header-->
+              <div class="ts-item-body">
+                <h4>emotion stability</h4>
+                <p class="mb-0">
+                  With the program in place, no matter the hundle/trial a student might pass physically/emotionally,
+                  they would always have a experienced mentor to talk to.
+                </p>
+              </div>
+              <!--end ts-item-body-->
+            </div>
+            <!--end ts-item-content-->
+          </div>
+          <!--end ts-item-->
+        </div>
+        <!--end col-xl-4-->
+        <div class="col-sm-6 offset-sm-4 col-md-4 offset-md-0 col-xl-4">
+          <div class="ts-item" data-animate="ts-fadeInUp" data-delay="0.2s"
+            style="animation-delay: 0.2s; visibility: visible;">
+            <div class="ts-item-content">
+              <div class="ts-item-header">
+                <figure class="icon">
+                  <img src="./img/icon-sitting.png" alt="">
+                </figure>
+                <!--end icon-->
+              </div>
+              <!--end ts-item-header-->
+              <div class=" ts-item-body">
+                <h4>mentee academic excellence</h4>
+                <p class="mb-0">
+                  With the right choices and better stability the students would have more time for their academics and
+                  thereby
+                  academic excellence is granted
+                </p>
+              </div>
+              <!--end ts-item-body-->
+            </div>
+            <!--end ts-item-content-->
+          </div>
+          <!--end ts-item-->
+        </div>
+        <!--end col-xl-4-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!--END OUR GOALS ******************************************************************************-->
 
-                  <br/> 
-                  <div class="fullwidth-section bg-callout" style="position: relative;">
-                    <div class="container">
-                      <div class="col-md-12 text-center item_bottom" style="opacity: 1; bottom: 0px;">
-                        <h1 class="white padBottom killMargin" style="font-size: 50px;"><i>If you would like to join us</i></h1>
 
-                        <br/> <br/> <br/> 
-                        <div class="row">
+  <div class="ts-title pt-3 text-center mt-5">
+    <h1><u>BENEFITS</u></h1>
+    <h3 class="ts-opacity__30">Below are the benefits of joining the program</h3>
 
-                          <div class="col-4">
-                          <a href="Sign form.html" class="btn btn-info p-2">As a Mentor</a>
-                        </div>
-                        <div class="col-4">
-                          <a href="Sign form.html" class="btn btn-info p-2 ">As a Mentee</a>
-                        </div>
-                        <div class="col-4">
-                          <a href="https://wa.me/2348146923944?text=Hi%2C%0AI'm%20........%0AI%20would%20like%20to%20work%20with%20KROMTECH" class="btn btn-info p-2 ">Business Partner</a>
-                        </div>
-                        </div>
-                        
-                      </div>
+    <div class="row d-flex justify-content-around">
+      <div class="col">
+        <div class="card m-5 border-dark">
+          <div class="card-body">
+            <h4 class="card-header bg-info text-white">For Mentors</h4>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-info">Develop leadership skills</li>
+              <li class="list-group-item border-dark">Communication and listening skills</li>
+              <li class="list-group-item border-warning">Knowledge</li>
+              <li class="list-group-item border-danger">Learning opportunity</li>
+              <li class="list-group-item border-primary">Giving back and Personal satisfaction</li>
+              <li class="list-group-item border-success">Certificate upon Completion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card m-5 border-dark">
+          <div class="card-body ">
+            <h4 class="card-header bg-info text-white">For Mentee</h4>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item border-info">Learn the workplace routine</li>
+              <li class="list-group-item border-dark">Enhance skill development</li>
+              <li class="list-group-item border-warning">Networking</li>
+              <li class="list-group-item border-danger">Direction</li>
+              <li class="list-group-item border-primary">Problem-solving</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="font-size: large;"><i><b><a href="#">Click the link for detailed explanation of the
+            benefits</a></b></i></div>
+  </div>
+  <br /> <br /> <br /> <br />
+  <div class="d-flex justify-content-center">
+    <div class="contain">
+      <div class="timeline ">
+        <div class="start"></div>
+      </div>
+      <div class="entries">
+        <div class="entry project">
+          <div class="dot"></div>
+          <div class="label">
+            <div class="time">
+              Comming Soon
+            </div>
+            <div class="detail">
+              Launch
+            </div>
+          </div>
+        </div>
+        <div class="entry study">
+          <div class="dot"></div>
+          <div class="label">
+            <div class="time">
+              Coming Soon
+            </div>
+            <div class="detail">
+              Registration
+            </div>
+          </div>
+        </div>
+        <div class="entry project">
+          <div class="dot"></div>
+          <div class="label">
+            <div class="time">
+              Coming Soon
+            </div>
+            <div class="detail">
+              Start
+            </div>
+          </div>
+        </div>
+        <div class="entry study">
+          <div class="dot"></div>
+          <div class="label">
+            <div class="time">
+              Coming Soon
+            </div>
+            <div class="detail">
+              End
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- sign up start ============================================================================== -->
+
+  <br />
+  <div class="fullwidth-section bg-callout" style="position: relative;">
+    <div class="container">
+      <div class="col-md-12 text-center item_bottom" style="opacity: 1; bottom: 0px;">
+        <h1 class="white padBottom killMargin" style="font-size: 50px;"><i>If you would like to join us</i></h1>
+
+        <br /> <br /> <br />
+        <div class="row">
+
+          <div class="col-4">
+            <a href="Sign form.html" class="btn btn-info p-2">As a Mentor</a>
+          </div>
+          <div class="col-4">
+            <a href="Sign form.html" class="btn btn-info p-2 ">As a Mentee</a>
+          </div>
+          <div class="col-4">
+            <a href="https://wa.me/2348146923944?text=Hi%2C%0AI'm%20........%0AI%20would%20like%20to%20work%20with%20KROMTECH"
+              class="btn btn-info p-2 ">Business Partner</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- sign up end ============================================================================== -->
+  <!-- partnerhip start ============================================================================== -->
+  <section id="team" class="section-content bg2 " style="position: relative; ">
+    <div class="container">
+      <div class="row">
+        <!-- Section Title -->
+        <div class="text-center section-title item_bottom " style="opacity: 1; bottom: 0px;">
+          <div>
+            <span class="fa fa-users fa-2x"></span>
+          </div>
+
+          <h1><span>Our Partners include</span></h1>
+        </div>
+        <!-- End Section Title -->
+      </div>
+      <div class="row">
+        <div class="col"><img src="SOSSA.jpeg"> </div>
+        <div class="col"><img src="ULES.jpeg"> </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- partnership end ============================================================================== -->
+
+  <!-- meet the team start ============================================================================== -->
+
+  <section id="team" class="section-content bg2 " style="position: relative; ">
+    <div class="container">
+      <div class="row">
+        <!-- Section Title -->
+        <div class="text-center section-title item_bottom " style="opacity: 1; bottom: 0px;">
+          <div>
+            <span class="fa fa-users fa-2x"></span>
+          </div>
+
+          <h1>Our <span>Team</span></h1>
+        </div>
+        <!-- End Section Title -->
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- member 1 -->
+          <div class="member_item">
+            <div class="member_img">
+              <img src="./img/Anthony.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="member_descr center">
+              <div class="member_name">
+                Kromate
+              </div>
+              <div class="member_post">
+                Founder
+              </div>
+              <div class="member_social">
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <div class="member_about">
+                Created this program as a way for him to give back to the community of students and ensure progress both
+                academically and mentally
+              </div>
+              <div class="skill-member">
+                <ul class="skillBar">
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="90" style="width: 90%;"><strong>Leadership 90%</strong></span>
                     </div>
-                  </div>
-
-                  <!-- sign up end ============================================================================== -->
-                  <!-- partnerhip start ============================================================================== -->
-                  <section id="team" class="section-content bg2 " style="position: relative; ">
-                    <div class="container">
-                      <div class="row">
-                        <!-- Section Title -->
-                        <div class="text-center section-title item_bottom " style="opacity: 1; bottom: 0px;">
-                          <div>
-                            <span class="fa fa-users fa-2x"></span>
-                          </div>
-
-                          <h1><span>Our Partners include</span></h1>
-                        </div>
-                        <!-- End Section Title -->
-                      </div>
-                      <div class="row">
-                        <div class="col"><img src="SOSSA.jpeg"> </div>
-                        <div class="col"><img src="ULES.jpeg"> </div>
-                      </div>
-                        
-                      </div>
-                   </section> 
-
-
-                  <!-- partnership end ============================================================================== -->
-
-                  <!-- meet the team start ============================================================================== -->
-
-                  <section id="team" class="section-content bg2 " style="position: relative; ">
-                    <div class="container">
-                      <div class="row">
-                        <!-- Section Title -->
-                        <div class="text-center section-title item_bottom " style="opacity: 1; bottom: 0px;">
-                          <div>
-                            <span class="fa fa-users fa-2x"></span>
-                          </div>
-
-                          <h1>Our <span>Team</span></h1>
-                        </div>
-                        <!-- End Section Title -->
-                      </div>
-                      <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                          <!-- member 1 -->
-                          <div class="member_item">
-                            <div class="member_img">
-                              <img src="Anthony.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="member_descr center">
-                              <div class="member_name">
-                                 Kromate
-                              </div>
-                              <div class="member_post">
-                                 Founder
-                              </div>
-                              <div class="member_social">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-                              </div>
-                              <div class="member_about">
-                                 Created this program as a way for him to give back to the community of students and ensure progress both academically and mentally
-                              </div>
-                              <div class="skill-member">
-                                <ul class="skillBar">
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="90" style="width: 90%;"><strong>Leadership 90%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="70" style="width: 70%;"><strong>Programming 70%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="90" style="width: 90%;"><strong>Communication 90%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="70" style="width: 70%;"><strong>Creative 75%</strong></span>
-                                  </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                          <!-- member 2 -->
-                          <div class="member_item">
-                            <div class="member_img">
-                              <img src="Harith.jpg" alt="" class="img-responsive">
-                            </div>
-                            <div class="member_descr center">
-                              <div class="member_name">
-                                 Harith
-                              </div>
-                              <div class="member_post">
-                                 Director 
-                              </div>
-                              <div class="member_social">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-                              </div>
-                              <div class="member_about">
-                                 He his calm, gentle and intelligent, His passion and love for others makes him the perfect Leader for the project
-                              </div>
-                              <div class="skill-member">
-                                <ul class="skillBar">
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="80" style="width: 80%;"><strong>Creative 90%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="70" style="width: 70%;"><strong>Leadership 90%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="90" style="width: 90%;"><strong>Communication 75%</strong></span>
-                                  </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                          <!-- member 3 -->
-                          <div class="member_item">
-                            <div class="member_img">
-                              <img src="Heritage.jpeg" alt="" class="img-responsive">
-                            </div>
-                            <div class="member_descr center">
-                              <div class="member_name">
-                                 Heritage
-                              </div>
-                              <div class="member_post">
-                                 Co-Director
-                              </div>
-                              <div class="member_social">
-                                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-                              </div>
-                              <div class="member_about">
-                                 Calm, Unique and an awkward ambivent, combining both Beauty, Brains and Skills she soars for greatness . making her the perfect Co-Director
-                              </div>
-                              <div class="skill-member">
-                                <ul class="skillBar">
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="80" style="width: 80%;"><strong>Leadership 80%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="70" style="width: 70%;"><strong>Communication 70%</strong></span>
-                                  </div>
-                                  </li>
-                                  <li>
-                                  <div class="skillBg">
-                                    <span data-width="90" style="width: 90%;"><strong>Skills 70%</strong></span>
-                                  </div>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="70" style="width: 70%;"><strong>Programming 70%</strong></span>
                     </div>
-                    </section>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="90" style="width: 90%;"><strong>Communication 90%</strong></span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="70" style="width: 70%;"><strong>Creative 75%</strong></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- member 2 -->
+          <div class="member_item">
+            <div class="member_img">
+              <img src="./img/Harith.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="member_descr center">
+              <div class="member_name">
+                Harith
+              </div>
+              <div class="member_post">
+                Director
+              </div>
+              <div class="member_social">
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <div class="member_about">
+                He his calm, gentle and intelligent, His passion and love for others makes him the perfect Leader for
+                the project
+              </div>
+              <div class="skill-member">
+                <ul class="skillBar">
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="80" style="width: 80%;"><strong>Creative 90%</strong></span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="70" style="width: 70%;"><strong>Leadership 90%</strong></span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="90" style="width: 90%;"><strong>Communication 75%</strong></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <!-- member 3 -->
+          <div class="member_item">
+            <div class="member_img">
+              <img src="./img/Heritage.jpeg" alt="" class="img-responsive">
+            </div>
+            <div class="member_descr center">
+              <div class="member_name">
+                Heritage
+              </div>
+              <div class="member_post">
+                Co-Director
+              </div>
+              <div class="member_social">
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <div class="member_about">
+                Calm, Unique and an awkward ambivent, combining both Beauty, Brains and Skills she soars for greatness .
+                making her the perfect Co-Director
+              </div>
+              <div class="skill-member">
+                <ul class="skillBar">
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="80" style="width: 80%;"><strong>Leadership 80%</strong></span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="70" style="width: 70%;"><strong>Communication 70%</strong></span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skillBg">
+                      <span data-width="90" style="width: 90%;"><strong>Skills 70%</strong></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                      <!-- meet the team end ============================================================================== -->
+      </div>
+    </div>
+  </section>
 
-                      <!-- contact form start ============================================================================== -->
-                    <section id="contact" class="section-content bg2 bg-secondary" style="position: relative;">
-                      <div class="container">
-                        <div class="row">
-                          <!-- Section title -->
-                          <div class="section-title item_bottom text-center" style="opacity: 1; bottom: 0px;">
-                            <div>
-                              <span class="fa fa-envelope fa-2x"></span>
-                            </div>
-                            <h1>Get in <span>touch</span></h1>
-                          </div>
-                          <!-- End Section title -->
-                        </div>
-                        <div class="row item_fade_in " style="opacity: 1; right: 0px;">
-                          <div class="col-md-6 col-md-offset-3 text-center contact-block">
-                            <!-- Contact Details -->
-                            <i class="fa fa-map-marker fa-3x"></i>
-                            <p>
-                              <strong style="font-size: large;">You can Whatsapp or call the number below </strong>  <br/>
-                              <strong style="font-size: large;">Or fill the form</strong>
-                               
-                            </p>
-                            <p>
-                               +2348146923944 <br> +2348179648536 <br> +2347014357004
-                            </p>
-                            <!-- End Contact Details -->
-                            <!-- Social Icon -->
-                            <div class="social-icon">
-                              <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-                              <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-                              <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
-                              <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-                              <a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
-                              <a href="#"><i class="fa fa-vimeo-square fa-3x"></i></a>
-                            </div>
-                            <!-- End Social Icon -->
-                          </div>
-                        </div>
-                        
-                        <div class="row item_fade_in " style="opacity: 1; right: 0px;">
-                          <h4 class="text-center">Drop us a Line</h4>
-                          <div class="col-md-6 col-md-offset-3">
-                            <div class="form-respond text-center">
-                            </div>
-                            <form method="post" name="contactform" id="contactform" class="form validate item_bottom" role="form" style="opacity: 1; bottom: 0px;">
-                              <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control required" placeholder="Name">
-                              </div>
-                              <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control required email" placeholder="Email">
-                              </div>
-                              <div class="form-group">
-                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
-                              </div>
-                              <div class="form-group">
-                                <textarea name="message" id="message" class="form-control input-lg required" rows="9" placeholder="Enter Message"></textarea>
-                              </div>
-                              <div class="form-group text-center">
-                                <input type="submit" id="contactForm_submit" class="btn btn-trans btn-border btn-full" value="Submit">
-                              </div>
-                              <!-- antispam code -->
-                              <div class="antispam">
-                                <input type="text" value="" name="url">
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                        
-                        <!-- contact form end ============================================================================== -->
-                      </div>
-                      </section>
+  <!-- meet the team end ============================================================================== -->
 
+  <!-- contact form start ============================================================================== -->
+  <section id="contact" class="section-content bg2 bg-secondary" style="position: relative;">
+    <div class="container">
+      <div class="row">
+        <!-- Section title -->
+        <div class="section-title item_bottom text-center" style="opacity: 1; bottom: 0px;">
+          <div>
+            <span class="fa fa-envelope fa-2x"></span>
+          </div>
+          <h1>Get in <span>touch</span></h1>
+        </div>
+        <!-- End Section title -->
+      </div>
+      <div class="row item_fade_in " style="opacity: 1; right: 0px;">
+        <div class="col-md-6 col-md-offset-3 text-center contact-block">
+          <!-- Contact Details -->
+          <i class="fa fa-map-marker fa-3x"></i>
+          <p>
+            <strong style="font-size: large;">You can Whatsapp or call the number below </strong> <br />
+            <strong style="font-size: large;">Or fill the form</strong>
+
+          </p>
+          <p>
+            +2348146923944 <br> +2348179648536 <br> +2347014357004
+          </p>
+          <!-- End Contact Details -->
+          <!-- Social Icon -->
+          <div class="social-icon">
+            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-vimeo-square fa-3x"></i></a>
+          </div>
+          <!-- End Social Icon -->
+        </div>
+      </div>
+
+      <div class="row item_fade_in " style="opacity: 1; right: 0px;">
+        <h4 class="text-center">Drop us a Line</h4>
+        <div class="col-md-6 col-md-offset-3">
+          <div class="form-respond text-center">
+          </div>
+          <form method="post" name="contactform" id="contactform" class="form validate item_bottom" role="form"
+            style="opacity: 1; bottom: 0px;">
+            <div class="form-group">
+              <input type="text" name="name" id="name" class="form-control required" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" class="form-control required email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control input-lg required" rows="9"
+                placeholder="Enter Message"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <input type="submit" id="contactForm_submit" class="btn btn-trans btn-border btn-full" value="Submit">
+            </div>
+            <!-- antispam code -->
+            <div class="antispam">
+              <input type="text" value="" name="url">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- contact form end ============================================================================== -->
+    </div>
+  </section>
 
 
 </body>
