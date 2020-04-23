@@ -1,10 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-body {
-  margin: 0;
-  font-family: PT Sans, sans-serif;
-  background-color: #fcfcfc;
-  color: #000;
-}
+
 @media screen and (min-width: 480px) {
   .contain {margin-left: 500px;}
 }
@@ -12,15 +6,16 @@ body {
   margin: 3rem 0;
   width: 100%;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 2re1m;
   padding-bottom: 2rem;
   margin-bottom: 200px;
+	overflow-x: hidden;
 
 }
 
 
 .entries {
-  margin-right: -10000px;
+  margin-right: -0000px;
   margin-left: 1rem;
 }
 

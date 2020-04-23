@@ -1,19 +1,7 @@
-
-/* ##### GENERAL CLASS ##### */
-*, *:after, *::before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-html, body {
-	height: 100%;
-	width: 100%;
-}
 body {
-	font-family: 'Source Sans Pro', helvetica, arial, sans-serif;
+
 	color: #333333;
 	line-height: 1.6;
-	overflow-x: hidden;
 }
 a {
 	-webkit-transition: all 0.3s ease-in-out;

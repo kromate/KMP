@@ -402,29 +402,6 @@
   <!-- sign up start ============================================================================== -->
 
   <br />
-  <div class="fullwidth-section bg-callout" style="position: relative;">
-    <div class="container">
-      <div class="col-md-12 text-center item_bottom" style="opacity: 1; bottom: 0px;">
-        <h1 class="white padBottom killMargin" style="font-size: 50px;"><i>If you would like to join us</i></h1>
-
-        <br /> <br /> <br />
-        <div class="row">
-
-          <div class="col-4">
-            <a href="Sign form.html" class="btn btn-info p-2">As a Mentor</a>
-          </div>
-          <div class="col-4">
-            <a href="Sign form.html" class="btn btn-info p-2 ">As a Mentee</a>
-          </div>
-          <div class="col-4">
-            <a href="https://wa.me/2348146923944?text=Hi%2C%0AI'm%20........%0AI%20would%20like%20to%20work%20with%20KROMTECH"
-              class="btn btn-info p-2 ">Business Partner</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- sign up end ============================================================================== -->
   <!-- partnerhip start ============================================================================== -->
@@ -437,7 +414,7 @@
             <span class="fa fa-users fa-2x"></span>
           </div>
 
-          <h1><span>Our Partners include</span></h1>
+          <h1 class="d-flex justify-content-center"><span>Our Partners include</span></h1>
         </div>
         <!-- End Section Title -->
       </div>
@@ -612,80 +589,43 @@
 
   <!-- meet the team end ============================================================================== -->
 
-  <!-- contact form start ============================================================================== -->
-  <section id="contact" class="section-content bg2 bg-secondary" style="position: relative;">
-    <div class="container">
-      <div class="row">
-        <!-- Section title -->
-        <div class="section-title item_bottom text-center" style="opacity: 1; bottom: 0px;">
-          <div>
-            <span class="fa fa-envelope fa-2x"></span>
-          </div>
-          <h1>Get in <span>touch</span></h1>
-        </div>
-        <!-- End Section title -->
-      </div>
-      <div class="row item_fade_in " style="opacity: 1; right: 0px;">
-        <div class="col-md-6 col-md-offset-3 text-center contact-block">
-          <!-- Contact Details -->
-          <i class="fa fa-map-marker fa-3x"></i>
-          <p>
-            <strong style="font-size: large;">You can Whatsapp or call the number below </strong> <br />
-            <strong style="font-size: large;">Or fill the form</strong>
 
-          </p>
-          <p>
-            +2348146923944 <br> +2348179648536 <br> +2347014357004
-          </p>
-          <!-- End Contact Details -->
-          <!-- Social Icon -->
-          <div class="social-icon">
-            <a href="#"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-pinterest-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-vimeo-square fa-3x"></i></a>
-          </div>
-          <!-- End Social Icon -->
-        </div>
-      </div>
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
 
-      <div class="row item_fade_in " style="opacity: 1; right: 0px;">
-        <h4 class="text-center">Drop us a Line</h4>
-        <div class="col-md-6 col-md-offset-3">
-          <div class="form-respond text-center">
-          </div>
-          <form method="post" name="contactform" id="contactform" class="form validate item_bottom" role="form"
-            style="opacity: 1; bottom: 0px;">
-            <div class="form-group">
-              <input type="text" name="name" id="name" class="form-control required" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" id="email" class="form-control required email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
-            </div>
-            <div class="form-group">
-              <textarea name="message" id="message" class="form-control input-lg required" rows="9"
-                placeholder="Enter Message"></textarea>
-            </div>
-            <div class="form-group text-center">
-              <input type="submit" id="contactForm_submit" class="btn btn-trans btn-border btn-full" value="Submit">
-            </div>
-            <!-- antispam code -->
-            <div class="antispam">
-              <input type="text" value="" name="url">
-            </div>
-          </form>
-        </div>
-      </div>
+  <p class="h4 mb-4">Contact us</p>
 
-      <!-- contact form end ============================================================================== -->
-    </div>
-  </section>
+  <!-- Name -->
+  <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
 
+  <!-- Email -->
+  <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Subject -->
+  <label>Subject</label>
+  <select class="browser-default custom-select mb-4">
+      <option value="" disabled>Choose option</option>
+      <option value="1" selected>Feedback</option>
+      <option value="2">Report a bug</option>
+      <option value="3">Feature request</option>
+  </select>
+
+  <!-- Message -->
+  <div class="form-group">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <!-- Copy -->
+  <div class="custom-control custom-checkbox mb-4">
+      <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+      <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+  </div>
+
+  <!-- Send button -->
+  <button class="btn btn-info btn-block" type="submit">Send</button>
+
+</form>
+<!-- Default form contact -->
 
 </body>
 
