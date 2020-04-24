@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +13,7 @@
 	<link rel="stylesheet" href="./style/jarallax.css">
 	<link rel="stylesheet" href="./style/vs2015.css">
 	<link rel="stylesheet" href="./style/jquery.fancybox.min.css">
-	<link rel='icon' href='./img/krom.ico' type='image/x-icon'/ >
+	<link rel='icon' href='./img/krom.ico' type='image/x-icon' />
 	<!-- Map -->
 	<link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet">
 
@@ -19,7 +21,7 @@
 	<link rel="stylesheet" href="./style/theme.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 	<style>
-		body{
+		body {
 			font-family: 'Baloo Bhaina 2', cursive;
 		}
 	</style>
@@ -28,11 +30,14 @@
 	<title>Kromtech Checkup</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-156446909-2");</script>
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+	<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "UA-156446909-2");</script>
 
 </head>
+
 <body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
-	
+
 	<!-- CONTENT
 	================================================== -->
 	<section class="section-border border-primary">
@@ -45,7 +50,7 @@
 
 				</div>
 				<div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
-					
+
 					<!-- Heading -->
 					<h1 class="mb-0 font-weight-bold text-center">
 						Sign up
@@ -57,33 +62,33 @@
 					</p>
 
 					<!-- Form -->
-					<form class="mb-6">
+					<form id="kmp_form" class="mb-6">
 
 						<!-- Email -->
 						<div class="form-group">
 							<label for="email">
 								Email Address
 							</label>
-							<input type="email" class="form-control" id="email" placeholder="name@address.com">
+							<input type="email" name="entry.1605318048" class="form-control" id="email" placeholder="name@address.com">
 						</div>
 
-						<!-- Password -->
 						<div class="form-group mb-5">
 							<label for="text">
 								Full Name
 							</label>
-							<input type="text" class="form-control" id="password" placeholder="Enter your Full Name">
+							<input type="text" class="form-control" id="Full_name" name="entry.919909529"
+								placeholder="Enter your Full Name">
 						</div>
 						<div class="form-group mb-5">
 							<p>Choose Section</p>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="mentor" value="option1" checked>
+								<input class="form-check-input" type="radio" name="Mentoring" id="mentor" value="mentor">
 								<label class="form-check-label" for="mentor">
 									Mentor
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="mentee" value="option2">
+								<input class="form-check-input" type="radio" name="Mentoring" id="mentee" value="mentee">
 								<label class="form-check-label" for="mentee">
 									Mentee
 								</label>
@@ -94,20 +99,21 @@
 							<label for="number">
 								Whatsapp No
 							</label>
-							<input type="text" class="form-control" id="password" placeholder="Enter your Whatsapp No">
+							<input type="text" class="form-control" id="whatsapp_no" name="Whatsapp_no"
+								placeholder="Enter your Whatsapp No">
 						</div>
 
 						<div class="form-group mb-5">
 							<p>Gender</p>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" >
-								<label class="form-check-label" for="exampleRadios2">
+								<input class="form-check-input" type="radio" name="Gender" id="male" value="male">
+								<label class="form-check-label" for="gender">
 									Male
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2">
-								<label class="form-check-label" for="exampleRadios2">
+								<input class="form-check-input" type="radio" name="Gender" id="female" value="female">
+								<label class="form-check-label" for="gender">
 									Female
 								</label>
 							</div>
@@ -116,89 +122,90 @@
 						<div class="form-group mb-5">
 							<p>Choose Faculty</p>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="Faculty" id="Faculty" value="Art">
+								<label class="form-check-label" for="Faculty">
 									Arts
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Education">
+								<label class="form-check-label" for="Faculty">
 									Education
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
-									Engineering
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Engineering >
+								<label class=" form-check-label" for="Faculty">
+								Engineering
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
-									Environmental science
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Environmental science >
+								<label class=" form-check-label" for="Faculty">
+								Environmental science
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Law">
+								<label class="form-check-label" for="Faculty">
 									Law
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Pharmacy">
+								<label class="form-check-label" for="Faculty">
 									Pharmacy
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Science">
+								<label class="form-check-label" for="Faculty">
 									Science
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
-								<label class="form-check-label" for="exampleRadios1">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Social Science">
+								<label class="form-check-label" for="Faculty">
 									Social Science
 								</label>
 							</div>
 						</div>
 
-
 						<div class="form-group mb-5">
 							<label for="department">
 								department
 							</label>
-							<input type="text" class="form-control" id="department" placeholder="Enter your department">
+							<input type="text" class="form-control" id="department" name="Department"
+								placeholder="Enter your department">
 						</div>
 						<div class="form-group mb-5">
 							<label for="cgpa">
 								CGPA
 							</label>
-							<input type="text" class="form-control" id="cgpa" placeholder="This is optional">
+							<input type="text" class="form-control" id="cgpa" name="CGPA" placeholder="This is optional">
 						</div>
 						<div class="form-group mb-5">
 							<label for="likes">
 								Likes
 							</label>
-							<input type="text" class="form-control" id="likes" placeholder="Give examples of your likes">
+							<input type="text" class="form-control" id="likes" name="Likes" placeholder="Give examples of your likes">
 						</div>
 						<div class="form-group mb-5">
 							<label for="dislikes">
 								Dislikes
 							</label>
-							<input type="text" class="form-control" id="dislikes" placeholder="Give examples of your dislikes">
+							<input type="text" class="form-control" id="dislikes" name="Dislikes"
+								placeholder="Give examples of your dislikes">
 						</div>
 						<div class="form-group mb-5">
 							<label for="desc">
 								describe the Mentor/Mentee you would prefer
 							</label>
-							<input type="text" class="form-control" id="desc" placeholder="Your answer">
+							<input type="text" class="form-control" id="desc" name="Description" placeholder="Your answer">
 						</div>
 
 						<!-- Submit -->
-						<button class="btn btn-block btn-primary" type="submit">
+						<button class="btn btn-block btn-primary" id="submit-form" type="submit">
 							Submit
 						</button>
 
@@ -211,14 +218,35 @@
 
 	<!-- JAVASCRIPT
 	================================================== -->
-	<!-- Libs JS -->
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="jquery.min.js"></script>
+  <script src="jquery.serialize-object.min.js"></script>
+	<script>
+		var $form = $('form#kmp_form'),
+			url = 'https://script.google.com/macros/s/AKfycbyvS9mC-j7VcD9tXl4wWKjy5sA8nmE5kCoTkDHoPeFiFSOrBrV1/exec'
+
+		$('#submit-form').on('click', function (e) {
+			e.preventDefault();
+			var sub = $.ajax({
+				url: url,
+				method: "GET",
+				dataType: "json",
+				data: $form.serializeObject()
+			}).success(
+				alert("form submitted"),
+				window.location = "index.html"
+			);
+		})
+	</script>
+	<!-- Libs JS -->
+
 	<script src="./js/flickity.pkgd.min.js"></script>
 	<script src="./js/flickity-fade.js"></script>
 	<script src="./js/aos.js"></script>
 	<script src="./js/smooth-scroll.min.js"></script>
-	<script src="./js/jarallax.min.js"></script><div style="position: fixed; top: -9999px; left: 0px; height: 100vh; width: 0px;"></div>
+	<script src="./js/jarallax.min.js"></script>
+	<div style="position: fixed; top: -9999px; left: 0px; height: 100vh; width: 0px;"></div>
 	<script src="./js/jarallax-video.min.js"></script>
 	<script src="./js/jarallax-element.min.js"></script>
 	<script src="./js/typed.min.js"></script>
@@ -228,12 +256,15 @@
 	<script src="./js/isotope.pkgd.min.js"></script>
 	<script src="./js/imagesloaded.pkgd.min.js"></script>
 
+
 	<!-- Map -->
 	<script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
 
 	<!-- Theme JS -->
 	<script src="./assets/js/theme.min.js"></script>
 
-		
 
-</body></html>
+
+</body>
+
+</html>
