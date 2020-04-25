@@ -62,22 +62,22 @@
 					</p>
 
 					<!-- Form -->
-					<form id="kmp_form" class="mb-6">
+					<form id="kmp_form" class="mb-6" name="submit-to-google-sheet">
 
 						<!-- Email -->
 						<div class="form-group">
 							<label for="email">
 								Email Address
 							</label>
-							<input type="email" name="entry.1605318048" class="form-control" id="email" placeholder="name@address.com">
+							<input type="email" name="Email" class="form-control" id="email" placeholder="name@address.com">
 						</div>
 
 						<div class="form-group mb-5">
 							<label for="text">
 								Full Name
 							</label>
-							<input type="text" class="form-control" id="Full_name" name="entry.919909529"
-								placeholder="Enter your Full Name">
+							<input type="text" class="form-control" id="Full_name" name="Full_name"
+								placeholder=" Enter your Full Name">
 						</div>
 						<div class="form-group mb-5">
 							<p>Choose Section</p>
@@ -134,15 +134,16 @@
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Engineering >
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Engineering">
 								<label class=" form-check-label" for="Faculty">
-								Engineering
+									Engineering
 								</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty" value="Environmental science >
+								<input class="form-check-input" type="radio" name="exampleRadios" id="Faculty"
+									value="Environmental science">
 								<label class=" form-check-label" for="Faculty">
-								Environmental science
+									Environmental science
 								</label>
 							</div>
 							<div class="form-check">
@@ -218,26 +219,26 @@
 
 	<!-- JAVASCRIPT
 	================================================== -->
+	<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+	<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+	<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js"></script>
 	<script src="jquery.min.js"></script>
-  <script src="jquery.serialize-object.min.js"></script>
+	<script src="jquery.serialize-object.min.js"></script>
 	<script>
-		var $form = $('form#kmp_form'),
-			url = 'https://script.google.com/macros/s/AKfycbyvS9mC-j7VcD9tXl4wWKjy5sA8nmE5kCoTkDHoPeFiFSOrBrV1/exec'
+		const form = document.forms['submit-to-google-sheet']
+		// var $form = $('form#kmp_form'),
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbyvS9mC-j7VcD9tXl4wWKjy5sA8nmE5kCoTkDHoPeFiFSOrBrV1/exec'
 
-		$('#submit-form').on('click', function (e) {
-			e.preventDefault();
-			var sub = $.ajax({
-				url: url,
-				method: "GET",
-				dataType: "json",
-				data: $form.serializeObject()
-			}).success(
-				alert("form submitted"),
-				window.location = "index.html"
-			);
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => alert('Success!', response))
+				.catch(error => alert('Error!', error.message))
 		})
+
+
 	</script>
 	<!-- Libs JS -->
 

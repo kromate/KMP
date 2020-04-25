@@ -159,10 +159,10 @@
     <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">About</a>
-        <a class="nav-item nav-link" href="./check up.html">Check up</a>
-        <a class="nav-item nav-link" href="#">Blog</a>
-        <a class="nav-item nav-link" href="#">Other Services</a>
+        <a class="nav-item nav-link" href="./register.html">register</a>
+        <a class="nav-item nav-link" href="./comingsoon.html">Check up</a>
+        <a class="nav-item nav-link" href="./comingsoon.html">Blog</a>
+        <a class="nav-item nav-link" href="./comingsoon.html">Other Services</a>
       </div>
     </div>
   </nav>
@@ -179,8 +179,8 @@
               </div>
               <h1 class="slider-h1">Become a Mentor<br>Get Mentored</h1>
 
-              <a href="check up.html" class="btn btn-outline-info m-2">As a Mentor</a>
-              <a href="check up.html" class="btn btn-outline-info m-1 ">As a Mentee</a>
+              <a href="register.html" class="btn btn-outline-info m-2">As a Mentor</a>
+              <a href="register.html" class="btn btn-outline-info m-1 ">As a Mentee</a>
 
             </div>
           </div>
@@ -591,41 +591,56 @@
 
 
 <!-- Default form contact -->
-<form class="text-center border border-light p-5" action="#!">
+<form name="submit-to-google-sheet" id="contact_form" class="text-center border border-light p-5" >
 
   <p class="h4 mb-4">Contact us</p>
 
   <!-- Name -->
-  <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+  <input type="text" id="defaultContactFormName" name="Full_name" class="form-control mb-4" placeholder="Name">
 
   <!-- Email -->
-  <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+  <input type="email" id="defaultContactFormEmail" name="Email" class="form-control mb-4" placeholder="E-mail">
 
   <!-- Subject -->
   <label>Subject</label>
   <select class="browser-default custom-select mb-4">
       <option value="" disabled>Choose option</option>
-      <option value="1" selected>Feedback</option>
-      <option value="2">Report a bug</option>
-      <option value="3">Feature request</option>
+      <option value="feedback" id="feedback" name="Subject" selected>Feedback</option>
+      <option value="report" id="report" name="Subject">Report a bug</option>
+      <option value="feature" id="feature" name="Subject">Feature request</option>
   </select>
 
   <!-- Message -->
   <div class="form-group">
-      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" name="Message" placeholder="Message"></textarea>
   </div>
 
-  <!-- Copy -->
-  <div class="custom-control custom-checkbox mb-4">
-      <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-      <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-  </div>
 
   <!-- Send button -->
   <button class="btn btn-info btn-block" type="submit">Send</button>
 
 </form>
-<!-- Default form contact -->
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="jquery.serialize-object.min.js"></script>
+<script>
+  const form = document.forms['submit-to-google-sheet']
+  // var $form = $('form#kmp_form'),
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyvS9mC-j7VcD9tXl4wWKjy5sA8nmE5kCoTkDHoPeFiFSOrBrV1/exec'
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert('Submitted!', response))
+      .catch(error => alert('Error!', error.message))
+  })
+
+
+</script>
 
 </body>
 
