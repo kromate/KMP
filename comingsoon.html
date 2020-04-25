@@ -12,7 +12,6 @@ html {
   padding: 0;
   margin: 0;
   width: 100%;
-  position: relative;
   height: 100%;
 }
 
@@ -21,19 +20,16 @@ body {
 }
 
 section {
-  position: relative;
   width: 100%;
   height: 100%;
   background: radial-gradient(circle, #0f7ae5b8, #da5900);
 }
 
 #beerCanvas {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
 }
 
 .coming_content {
@@ -47,10 +43,11 @@ section {
   color: white;
   text-align: center;
   z-index: 101;
+  overflow:hidden;
 }
 .coming_content h1 {
-  font-size: 5.625em;
-  margin: 0;
+  
+  margin: 10;
   letter-spacing: 2px;
   text-align: center;
   color: white;
@@ -60,7 +57,7 @@ section {
   display: block;
   text-align: center;
   position: relative;
-  margin: 12px 0;
+  margin: 1px;
 }
 .coming_content .separator_container:before, .coming_content .separator_container:after {
   display: table;
@@ -96,7 +93,7 @@ section {
   letter-spacing: 2px;
   line-height: 2;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 100;
   text-align: center;
   margin: 0;
 }
