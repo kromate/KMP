@@ -33,46 +33,27 @@
 
 </head>
 
-<body >
-  <div class="container ">
-    Login
-    <form>
-      <div class="form-group mb-5">
-        <label for="email">
-          Email
-        </label>
-        <input type="email" class="form-control" id="email" 
-          placeholder="Email">
-      </div>
-      <div class="form-group mb-5">
-        <label for="Password">
-          Password
-        </label>
-        <input type="password" class="form-control" id="password" 
-          placeholder="password">
-      </div>
+<body>
+  <h3 class="container center">
+    Welcome!!!
+  </h3>
+  <h4 class="center ">You are currently signed in as <span id="pmail" class="text-success"></span></h4>
 
-      <div class="center">
-        <div id="err" class=" text-danger"></div>
-        <button id="submit" type="submit" class="btn btn-secondary">Submit</button>
-      </div>
-    </form>
+  <div class="card" id="content" style="width: 100%; margin-top: 3rem;">
+
 
   </div>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/5ee39ca79e5f69442290732d/default';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <div class="container" style="margin-top:3rem">
+    <u class="text-primary">Note</u>
+    <p><i>Above are the details of your Mentor/Mentee feel free to enter their DM and start a conversation and if there
+        is no reponse after a considerable time Or you feel like you where paired wrongly, click the green icon below
+        and request a repairing. <br>If you have any questions you and also click the icon below and ask till you
+        satisfied</i></p>
+    <p style="margin-bottom: 3rem;"><u class="text-primary">PS</u><br><i> Some Mentor have been assigned with two
+        mentees if you among the selected few your Screen might be a little bit different </i></p>
+  </div>
+
 
 
 
@@ -89,6 +70,20 @@
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
 <script src="./js/fireconfig.js"></script>
-<script src="./js/login.js"></script>
+<script src="./js/home.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/5ee39ca79e5f69442290732d/default';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
 
 </html>

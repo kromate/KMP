@@ -8,14 +8,18 @@ admin.initializeApp();
 exports.newUserSignUp = functions.auth.user().onCreate(user => {
   // for background triggers you must return a value/promise
   return admin.firestore().collection('users').doc(user.uid).set({
-    ment: '',
-    mentNum:'',
-    ment2: '',
-    mentNum2:'',
-    ment2: '',
-    mentNum2:'',
+
     email: user.email,
-    phone: '',
+
+    role: '',
+    mentMail: '',
+    mentName: '',
+    mentNum: '',
+    role2:'',
+    ment2Mail: '',
+    ment2Name: '',
+    mentNum2: '',
+  
 
   });
 });
