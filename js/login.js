@@ -9,6 +9,7 @@ document.getElementById('submit').addEventListener('click', function (e) {
 
     var errorCode = error.code;
     var errorMessage = error.message;
+    document.getElementById('err').innerHTML = ""
     document.getElementById('err').innerHTML = errorMessage
     // ...
   });
