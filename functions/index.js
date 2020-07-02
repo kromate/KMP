@@ -7,15 +7,13 @@ admin.initializeApp();
 // auth trigger (new user signup)
 exports.newUserSignUp = functions.auth.user().onCreate(user => {
   // for background triggers you must return a value/promise
-  return admin.firestore().collection('users').doc(user.uid).set({
+  return admin.firestore().collection('ules').doc(user.uid).set({
 
     email: user.email,
 
-    role: '',
     mentMail: '',
     mentName: '',
     mentNum: '',
-    role2:'',
     ment2Mail: '',
     ment2Name: '',
     mentNum2: '',
@@ -26,6 +24,6 @@ exports.newUserSignUp = functions.auth.user().onCreate(user => {
 
 // auth trigger (user deleted)
 exports.userDeleted = functions.auth.user().onDelete(user => {
-  const doc = admin.firestore().collection('users').doc(user.uid);
+  const doc = admin.firestore().collection('ules').doc(user.uid);
   return doc.delete();
 });
