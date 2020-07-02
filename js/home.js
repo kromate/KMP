@@ -7,7 +7,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     document.getElementById('pmail').innerHTML = user.email
 
     db.collection(`users`).doc(user.uid).get().then(function (querySnapshot) {      
-      console.log(querySnapshot)
+      content.innerHTML = ""
       loadData(querySnapshot.data())
       if (querySnapshot.data().ment2Name != '') {
         loadData2(querySnapshot.data())
@@ -28,8 +28,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 
 function loadData(data) {
-  console.log(data)
-  const html = `
+    const html = `
                <div class="card-header" style="margin-top: 2rem;">
       Role <span style="margin-left: 20%">${data.role}</span>
     </div>
@@ -45,7 +44,7 @@ function loadData(data) {
 }
 
 function loadData2(data) {
-  console.log(data)
+  
   const html = `
                <div class="card-header" style="margin-top: 2rem;">
       Role <span style="margin-left: 20%">${data.role2}</span>
